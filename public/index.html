@@ -9,15 +9,67 @@
   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
   <!-- <script async="" defer="" src="https://buttons.github.io/buttons.js"></script> -->
   <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+  <style>
+    @media only screen and (min-width: 960px) {
+      .container{
+        width: 960px;
+      }
+    }
+    @media only screen and (max-width: 960px) {
+      .container{
+        width: 600px;
+    }
+    @media only screen and (max-width: 600px) {
+      .container{
+        width: 100%;
+      }
+    }
+    .hero_table{
+      width:100%;
+    }
+      .header-left{
+      width:100%;
+
+  }
+    .header-right{
+      width:100%;
+    }
+    .lets-you-row .notify{
+      width: 50%;
+    }
+    .lets-you-row .share{
+      width: 50%;
+    }
+    .lets-you-row .connect{
+      width: 100%;
+    }
+    
+    .advance .image_head{
+      width:100%;
+    }
+    .advance .advance-left{
+      width:100%;
+    }
+    .advance .advance-right{
+      width:100%;
+    }
+    .advance .advance-left .apple{
+      text-align: center;
+    }
+    .advance .advance-right .google{
+      text-align: center;
+    }
+    }
+  </style>
 </head>
 
-<body style="background:black">
+<body style="background:black; margin:0;">
   <!-- //start of html email// -->
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td>
         <!-- //start of html container// -->
-        <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
+        <table class="hero_table" width="600" align="center" cellspacing="0" cellpadding="0" border="0">
           <!-- //start of header row// -->
           <tr>
             <td>
@@ -51,7 +103,7 @@
               <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="background:white">
                 <tr>
                   <td style="padding-top: 20px; font-family:sans-serif; color:#7d7d7d;">
-                    <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+                    <table class="menu_table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
                       <tr align="center">
                         <td>
                           <a href="#" style="font-family:sans-serif; color:#7d7d7d; font-size:14px; font-weight: 600; text-decoration:none;">About</a>
@@ -78,7 +130,7 @@
           <!-- //end of header row// -->
           <!-- //start of LETS YOU row// -->
           <tr>
-            <td style="background: #fafafa;">
+            <td class="lets-you-row" style="background: #fafafa;">
               <h3 align="center"; style="font-weight:600; font-size:24px; font-family:sans-serif; cursive; padding: 36px; color:#333333;">Hero lets you...</h3>
               <!-- START OF NOTIFY COLUMN -->
               <table class="notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
@@ -150,7 +202,7 @@
           <table class="connect" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
           style="padding: 15px 15px 70px 15px;">
             <tr>
-              <td>
+              <td class="connect-icon-con">
                 <table class="connect-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
                 style="padding:0;">
                 <tr>
@@ -183,12 +235,6 @@
             </td>
           </tr>
           <!-- //end of lETS YOU row// -->
-          <!-- //start of 3 row// -->
-          <tr>
-            <td>
-            </td>
-          </tr>
-          <!-- //end of main row// -->
           <!-- //start of ADVANCE row// -->
           <tr>
             <td>
@@ -196,7 +242,7 @@
               style="padding: 15px 15px 70px 15px; background:white">
               <tr>
                 <td align="center" style="padding-top:30px;">
-                  <img src="img/image_head.jpg">
+                  <img src="img/image_head.jpg" class="image_head">
                 </td>
               </tr>
               <tr>
@@ -216,7 +262,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td align="right">
+                    <td align="right" class="apple">
                       <img src="/img/appstore.png">
                     </td>
                   </tr>
@@ -230,7 +276,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td align="left">
+                  <td align="left" class="google">
                     <img src="/img/playstore.png">
                   </td>
                 </tr>
@@ -257,7 +303,7 @@
           <!-- //start of JOIN TOGETHER row// -->
           <tr>
             <td>
-              <table class="one-solution" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+              <table class="join-together" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
               style="padding:50px 0;background:white;">
               <tr>
                 <td>
@@ -555,7 +601,7 @@
           <!-- //start of FOOTER row// -->
           <tr>
             <td>
-              <table style="background:white; padding: 25px 0 0" class="interested" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+              <table style="background:white; padding: 25px 0 0" class="footer" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                   <td align="center">
                     <h2 style="font-family: 'Audiowide', 'Helvetica Neue', Helvetica, Arial,
@@ -564,7 +610,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <table style="background:white;" class="icons" width="300px" align="center" cellspacing="0" cellpadding="0" border="0">
+                    <table style="background:white;" class="footer_icons" width="300px" align="center" cellspacing="0" cellpadding="0" border="0">
                       <tr>
                         <td align="center">
                           <img  src="img/twitter_icon.png">
@@ -597,12 +643,6 @@
             </td>
           </tr>
           <!-- //end of FOOTER row// -->
-          <!-- //start of 10th row// -->
-          <tr>
-            <td>
-            </td>
-          </tr>
-          <!-- //end of main row// -->
         </table>
         <!-- //end of html container// -->
       </td>
@@ -610,5 +650,4 @@
   </table>
   <!-- //end of html email// -->
 </body>
-
 </html>
